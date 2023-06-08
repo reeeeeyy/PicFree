@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+/* ##### Hero ##### */
+
+#hero {
+  height: 100%;
+  min-width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+#search-nav {
+  height: 100%;
+  min-width: 100%;
+  margin: auto;
+  position: relative;
+  border-bottom: #cfc7c7 1px solid;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.dark #hero::before {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#hero > .container {
+  position: relative;
+  z-index: 1;
+}
+
+#hero > nav {
+  position: relative;
+  z-index: 1;
+}
+
+#hero > div {
+  position: relative;
+  z-index: 1;
+}
+
+#brand:hover {
+  opacity: 0.8;
+}
+
+/* ##### Navbar ##### */
+
+/* Hover Effects */
+
+#navbar-default li {
+  border-bottom: 2px solid transparent;
+}
+
+#navbar-default li:hover {
+  opacity: 0.8;
+}
+
+.active {
+  border-bottom: #07a081 2px solid;
+}
+
+/* Hover Effects Image and Video Search */
+
+#navbar-default-search li {
+  border-bottom: 2px solid transparent;
+}
+
+#navbar-default-search li:hover {
+  border-bottom: #07a081 2px solid;
+  opacity: 0.8;
+}
+
+#nav-button {
+  color: #fff;
+  border: #fff 2px solid;
+}
+
+#nav-s-button {
+  color: #07a081;
+  border: #07a081 2px solid;
+}
+
+/* ##### Image and Video Gallery */
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery .images {
+  gap: 15px;
+  max-width: 95%;
+  margin-top: 40px;
+  columns: 5 340px;
+  list-style: none;
+}
+.gallery .images .card {
+  display: flex;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 14px;
+  border-radius: 4px;
+}
+
+.gallery .images img {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.gallery .images video {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.images .details {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  bottom: -100px;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  justify-content: space-between;
+  transition: bottom 0.1s ease;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+.images li:hover .details {
+  bottom: 0;
+}
+.photographer {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.photographer a {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photographer img {
+  font-size: 1rem;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+.photographer i {
+  font-size: 1.6rem;
+  margin-right: 10px;
+}
+
+.photographer span {
+  font-size: 1rem;
+  border-bottom: 1px solid transparent;
+}
+
+.photographer span:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.photographer p {
+  font-size: 1rem;
+  border-bottom: 1px solid transparent;
+}
+
+.photographer p:hover {
+  border-bottom: 1px solid #333;
+}
+
+.dark .photographer p:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.gallery button,
+i {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.2s ease;
+}
+.details button {
+  background: #fff;
+  font-size: 1rem;
+  padding: 3px 8px;
+}
+
+.details button:hover {
+  opacity: 0.8;
+  outline: #07a081 1px solid;
+}
+
+/* Collections */
+
+#collections-wrapper div a:hover {
+  opacity: 0.8;
+}
+
+/* Search Bar */
+
+#search-btn {
+  background-color: #07a081;
+  border: 1px solid transparent;
+}
+
+#search-btn:hover {
+  opacity: 0.9;
+}
+
+/* ##### Modal ##### */
+
+.modalBackdrop {
+  cursor: auto;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#modal-body img {
+  max-height: 700px;
+}
+
+#modal-body video {
+  max-height: 700px;
+}
+
+#modal-likes i:hover {
+  color: red;
+}
+
+#modal-social:hover {
+  color: #f58529;
+}
+
+#modal-footer button {
+  background: #07a081;
+  color: white;
+}
+
+#modal-footer button:hover {
+  opacity: 0.8;
+}
+
+/* Back-to-top scroll button */
+
+#btn-back-to-top {
+  position: fixed;
+  display: none;
+  z-index: 99;
+  background: #07a081;
+  opacity: 0.8;
+}
+
+#btn-back-to-top:hover {
+  opacity: 1;
+  border: #068067 3px solid;
+}
+
+@media (max-width: 647px) {
+  #search-form {
+    margin-top: 12px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #search-query {
+    align-items: center;
+  }
+
+  @media (min-width: 0) and (max-width: 640px) {
+    #radioItems {
+      display: flex;
+      min-width: 60%;
+    }
+  }
+}
+
+@media (max-width: 984px) {
+  #search-form {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1038px) {
+  #theme-toggle {
+    margin-left: 70px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 414px) and (max-width: 721px) {
+  #theme-toggle {
+    margin-left: 80px;
+    margin-right: 20px;
+  }
+
+  #radioItems {
+    width: 35%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 413px) {
+  #main-navbar {
+    justify-content: space-between;
+  }
+  #theme-toggle {
+    margin: auto;
+  }
+}
