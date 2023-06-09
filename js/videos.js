@@ -17,7 +17,7 @@ async function displayRandomBG() {
   background.style.backgroundRepeat = "no-repeat";
 }
 
-const API_KEY = "8klWUq5IPAOI6Im4E3Mj3FVKjngnDs93hvr-bn_R-uw";
+const API_KEY = "XYT5T3yPOk1cO09fCRPeoJGqg2u8ct25prLl69N3dlI";
 const API_URL = "https://api.unsplash.com";
 
 // ########## Download Video
@@ -197,7 +197,7 @@ async function fetchAPIRandom(endpoint) {
 
 async function fetchPexelVideoAPI() {
   const apiUrl = `https://api.pexels.com/videos/popular?page=${currentPage}&per_page=${perPage}`;
-  const apiKey = "5ORmxKb0eCcy01Ziom7M9qfdP1Ft0Omq8PttgOGYqbHXuMkx3nBbs56a";
+  const apiKey = "TQk1fqYBhfZj0EikkQiZSF31I3doyO7RvpZwe8I4QZpNiREVQhU2jxTJ";
   const response = await fetch(apiUrl, {
     headers: { Authorization: apiKey },
   });
