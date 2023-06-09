@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en ">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,21 +25,21 @@
     />
 
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    <title>PicFree | Welcome</title>
+    <title>PicFree | License</title>
 
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body id="home">
-    <div class="container px-4 pt-2" id="hero">
-      <nav class="bg-transparent border-gray-200">
+    <div class="container px-4 py-2 dark:bg-gray-900" id="search-nav">
+      <nav class="bg-transparent border-gray-200 dark:bg-gray-900">
         <div
           class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4"
-          id="main-navbar"
+          id="navbar-default-search"
         >
-          <a href="#" class="flex items-center mr-26 brand">
+          <a href="index.html" class="flex items-center" id="brand">
             <img src="../img/PicFree.png" class="h-12 mr-3" alt="PicFree" />
             <span
-              class="self-center text-2xl font-semibold whitespace-nowrap text-white dark:text-gray-300"
+              class="self-center text-2xl font-semibold whitespace-nowrap text-dark dark:text-gray-400"
               >PicFree</span
             >
           </a>
@@ -77,9 +77,9 @@
 
           <button
             data-collapse-toggle="navbar-default"
-            id="nav-button"
+            id="nav-s-button"
             type="button"
-            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden dark:text-white"
             aria-controls="navbar-default"
             aria-expanded="false"
           >
@@ -107,8 +107,8 @@
             >
               <li>
                 <a
-                  href="#"
-                  class="block text-xl py-2 pl-3 pr-4 text-white dark:text-gray-300 active text-center"
+                  href="index.html"
+                  class="block text-xl py-2 pl-3 pr-4 text-dark dark:text-gray-300 text-center"
                   aria-current="page"
                   >Home</a
                 >
@@ -116,21 +116,21 @@
               <li>
                 <a
                   href="videos.html"
-                  class="block text-xl py-2 pl-3 pr-4 text-white dark:text-gray-300 text-center"
+                  class="block text-xl py-2 pl-3 pr-4 text-dark dark:text-gray-300 text-center"
                   >Videos</a
                 >
               </li>
               <li>
                 <a
                   href="collections.html"
-                  class="block text-xl py-2 pl-3 text-white dark:text-gray-300 text-center"
+                  class="block text-xl py-2 pl-3 text-dark dark:text-gray-300 text-center"
                   >Collections</a
                 >
               </li>
               <li>
                 <a
                   href="about.html"
-                  class="block text-xl py-2 pl-3 text-white dark:text-gray-300 text-center"
+                  class="block text-xl py-2 pl-3 text-dark dark:text-gray-300 text-center"
                   >About</a
                 >
               </li>
@@ -138,129 +138,104 @@
           </div>
         </div>
       </nav>
-
-      <div class="md:container md:mx-auto py-10 align-middle">
-        <h1
-          class="text-center text-white py-10 text-4xl w-2/3 mx-auto dark:text-gray-300 w-2/4"
-        >
-          The best free stock photos, royalty-free images & videos shared by
-          creators
-        </h1>
-
-        <form action="search.html" class="pb-20">
-          <ul
-            id="radioItems"
-            class="items-center w-60 text-center my-2 mx-auto text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white"
-          >
-            <li
-              class="w-full mx-auto border-gray-200 sm:border-b-0 border-r dark:border-gray-600"
-            >
-              <div class="flex items-center pl-3">
-                <input
-                  id="photo"
-                  type="radio"
-                  value="photo"
-                  name="type"
-                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-                  checked
-                />
-                <label
-                  for="photo"
-                  class="w-full py-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                  >Photos <i class="fa-solid fa-image"></i>
-                </label>
-              </div>
-            </li>
-            <li class="w-full dark:border-gray-600 mr-1">
-              <div class="flex items-center pl-3">
-                <input
-                  id="video"
-                  type="radio"
-                  value="video"
-                  name="type"
-                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-                />
-                <label
-                  for="video"
-                  class="w-full py-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                  >Videos <i class="fa-brands fa-youtube"></i
-                ></label>
-              </div>
-            </li>
-          </ul>
-          <div class="flex justify-center">
-            <div class="relative w-2/4" id="search-form">
-              <input
-                type="search"
-                name="search-term"
-                id="search-term"
-                class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg rounded-l-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-l-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
-                placeholder="Search for free photos and videos"
-              />
-              <button
-                type="submit"
-                id="search-btn"
-                class="absolute top-0 right-0 p-2.5 text-sm font-medium text-white bg-blue-700 rounded-r-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 dark:text-white"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
     </div>
 
-    <div class="md:mx-auto align-middle dark:bg-gray-900">
-      <div class="mx-auto">
-        <h3
-          class="text-center py-5 lg:text-3xl sm:text-sm font-semibold w-100 mx-auto dark:text-gray-300"
-        >
-          Free Stock Photos
-        </h3>
-        <hr class="w-2/3 mx-auto" />
-      </div>
+    <div class="md:mx-auto align-middle text-center dark:bg-gray-900">
+      <h1 class="text-4xl pt-8 pb-2 dark:text-gray-300">Legal Simplicity</h1>
+      <p class="w-96 mx-auto dark:text-gray-300">
+        All photos and videos on PicFree can be downloaded and used for free
+      </p>
     </div>
 
-    <section class="gallery dark:bg-gray-900">
-      <ul class="images"></ul>
-    </section>
+    <div class="md:mx-auto align-middle text-center dark:bg-gray-900">
+      <h1 class="text-2xl pt-8 pb-2 dark:text-gray-300">What is allowed?</h1>
+    </div>
 
-    <button
-      type="button"
-      data-mdb-ripple="true"
-      data-mdb-ripple-color="light"
-      class="inline-block h-16 w-16 p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5"
-      id="btn-back-to-top"
-    >
-      <svg
-        aria-hidden="true"
-        focusable="false"
-        data-prefix="fas"
-        class="inline-flex items-center justify-center w-8 h-8"
-        role="img"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 448 512"
+    <div class="md:mx-auto align-middle pb-3 text-center dark:bg-gray-900">
+      <div
+        class="block align-middle mx-auto max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
       >
-        <path
-          fill="currentColor"
-          d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
-        ></path>
-      </svg>
-    </button>
+        <p class="font-normal text-gray-700 dark:text-gray-400">
+          All photos and videos on PicFree are free to use.
+        </p>
+      </div>
+    </div>
+
+    <div class="md:mx-auto align-middle pb-3 text-center dark:bg-gray-900">
+      <div
+        class="block align-middle mx-auto max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+      >
+        <p class="font-normal text-gray-700 dark:text-gray-400">
+          Attribution is not required. Giving credit to the photographer or
+          PicFree is not necessary but always appreciated.
+        </p>
+      </div>
+    </div>
+
+    <div class="md:mx-auto align-middle pb-3 text-center dark:bg-gray-900">
+      <div
+        class="block align-middle mx-auto max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+      >
+        <p class="font-normal text-gray-700 dark:text-gray-400">
+          You can modify the photos and videos from PicFree. Be creative and
+          edit them as you like.
+        </p>
+      </div>
+    </div>
+
+    <div class="md:mx-auto align-middle text-center dark:bg-gray-900">
+      <h1 class="text-2xl pt-8 pb-2 dark:text-gray-300">
+        What is not allowed?
+      </h1>
+    </div>
+
+    <div class="md:mx-auto align-middle pb-3 text-center dark:bg-gray-900">
+      <div
+        href="#"
+        class="block align-middle mx-auto max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+      >
+        <p class="font-normal text-gray-700 dark:text-gray-400">
+          Identifiable people may not appear in a bad light or in a way that is
+          offensive.
+        </p>
+      </div>
+    </div>
+
+    <div class="md:mx-auto align-middle pb-3 text-center dark:bg-gray-900">
+      <div
+        href="#"
+        class="block align-middle mx-auto max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+      >
+        <p class="font-normal text-gray-700 dark:text-gray-400">
+          Don't sell unaltered copies of a photo or video, e.g. as a poster,
+          print or on a physical product without modifying it first.
+        </p>
+      </div>
+    </div>
+
+    <div class="md:mx-auto align-middle pb-3 text-center dark:bg-gray-900">
+      <div
+        href="#"
+        class="block align-middle mx-auto max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+      >
+        <p class="font-normal text-gray-700 dark:text-gray-400">
+          Don't imply endorsement of your product by people or brands on the
+          imagery.
+        </p>
+      </div>
+    </div>
+
+    <div class="md:mx-auto align-middle pb-3 text-center dark:bg-gray-900">
+      <div
+        href="#"
+        class="block align-middle mx-auto max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+      >
+        <p class="font-normal text-gray-700 dark:text-gray-400">
+          Don't redistribute or sell the photos and videos on other stock photo
+          or wallpaper platforms.
+        </p>
+      </div>
+    </div>
 
     <footer class="bg-white shadow dark:bg-gray-900">
       <div class="w-full mx-auto p-8 md:py-8">
@@ -288,9 +263,7 @@
               >
             </li>
             <li>
-              <a href="license.html" class="mr-4 hover:underline md:mr-6"
-                >Licensing</a
-              >
+              <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
             </li>
           </ul>
         </div>
@@ -359,7 +332,30 @@
       </div>
     </footer>
 
-    <script src="../js/index.js"></script>
+    <button
+      type="button"
+      data-mdb-ripple="true"
+      data-mdb-ripple-color="light"
+      class="inline-block h-16 w-16 p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5"
+      id="btn-back-to-top"
+    >
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        class="inline-flex items-center justify-center w-8 h-8"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+      >
+        <path
+          fill="currentColor"
+          d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+        ></path>
+      </svg>
+    </button>
+
+    <script src="../js/about-license.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
   </body>
 </html>
