@@ -154,6 +154,7 @@ function showModal() {
   modal.classList.remove("hidden");
   modal.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
+  modal.style.zIndex = "888";
 }
 
 // ########## Back-to-top
@@ -197,7 +198,7 @@ async function fetchAPIRandom(endpoint) {
 
 async function fetchPexelVideoAPI() {
   const apiUrl = `https://api.pexels.com/videos/popular?page=${currentPage}&per_page=${perPage}`;
-  const apiKey = "TQk1fqYBhfZj0EikkQiZSF31I3doyO7RvpZwe8I4QZpNiREVQhU2jxTJ";
+  const apiKey = "5ORmxKb0eCcy01Ziom7M9qfdP1Ft0Omq8PttgOGYqbHXuMkx3nBbs56a";
   const response = await fetch(apiUrl, {
     headers: { Authorization: apiKey },
   });
